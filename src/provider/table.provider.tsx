@@ -14,7 +14,7 @@ type ProviderProps = {
 export const TableProvider: React.FC<ProviderProps> = ({
   children,
   rows: initialRows,
-  columns,
+  columns = [],
   columnsComponents,
   tableProps,
 }) => {
@@ -23,9 +23,7 @@ export const TableProvider: React.FC<ProviderProps> = ({
 
   return (
     <TableContext.Provider value={{ rows, setRows }}>
-      {!children && columns && (
-        <DataGrid {...tableProps} rows={rows} columns={getColumns(columns)} />
-      )}
+      {!children && <DataGrid {...tableProps} rows={rows} columns={getColumns(columns)} />}
       {!!children && children}
     </TableContext.Provider>
   );

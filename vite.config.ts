@@ -13,9 +13,9 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "formio-data-grid",
+      name: "@nelumbo/formio-data-grid",
       formats: ["es", "umd"],
-      fileName: (format) => `formio-data-grid.${format}.js`,
+      fileName: (format) => `@nelumbo/formio-data-grid.${format}.js`,
     },
     rollupOptions: {
       external: ["react", "react-dom"],

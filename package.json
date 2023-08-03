@@ -1,7 +1,7 @@
 {
-  "name": "formio-data-grid",
+  "name": "@nelumbo/formio-data-grid",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -22,13 +22,14 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/formio-data-grid.umd.js",
-  "module": "./dist/formio-data-grid.js",
+  "main": "./dist/@nelumbo/formio-data-grid.umd.js",
+  "module": "./dist/@nelumbo/formio-data-grid.js",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/formio-data-grid.es.js",
-      "require": "./dist/formio-data-grid.umd.js"
+      "import": "./dist/@nelumbo/formio-data-grid.es.js",
+      "require": "./dist/@nelumbo/formio-data-grid.umd.js",
+      "types": "./dist/index.d.ts"
     }
   },
   "repository": {
